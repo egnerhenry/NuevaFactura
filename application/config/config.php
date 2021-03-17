@@ -1,5 +1,15 @@
-<?php
-defined('BASEPATH') OR exit('No direct script access allowed');
+<?php  if ( ! defined('BASEPATH')) exit('No direct script access allowed');
+
+
+$ip = 'localhost';
+
+
+$config['base_url']	= 'http://'.$ip.'/NuevaFactura';
+$config['base_ip']	= 'http://'.$ip.'/';
+
+
+//las url no pueden llevar espacio vacios (en blanco si pueden llevar me refiero a vacio), en este caso lo reemplazamos por esta variable
+$config['parametro_vacio'] = 'param_vacio---';
 
 /*
 |--------------------------------------------------------------------------
