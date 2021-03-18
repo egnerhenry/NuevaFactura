@@ -1,29 +1,22 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, shrink-to-fit=no">
-    <title>Blank Page - Multipurpose Bootstrap Dashboard Template </title>
+    <title>Account Settings | CORK - Multipurpose Bootstrap Dashboard Template </title>
     <link rel="icon" type="image/x-icon" href="cork/assets/img/favicon.ico"/>
-    <link href="cork/assets/css/loader.css" rel="stylesheet" type="text/css" />
-    <script src="cork/assets/js/loader.js"></script>
-
     <!-- BEGIN GLOBAL MANDATORY STYLES -->
     <link href="https://fonts.googleapis.com/css?family=Nunito:400,600,700" rel="stylesheet">
     <link href="cork/bootstrap/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
     <link href="cork/assets/css/plugins.css" rel="stylesheet" type="text/css" />
     <!-- END GLOBAL MANDATORY STYLES -->
 
-    <!-- BEGIN PAGE LEVEL PLUGINS/CUSTOM STYLES -->
-
-    <style>
-        .layout-px-spacing {
-            min-height: calc(100vh - 166px)!important;
-        }
-    </style>
-
-    <!-- END PAGE LEVEL PLUGINS/CUSTOM STYLES -->
+    <!--  BEGIN CUSTOM STYLE FILE  -->
+    <link rel="stylesheet" type="text/css" href="cork/plugins/dropify/dropify.min.css">
+    <link href="cork/assets/css/users/account-setting.css" rel="stylesheet" type="text/css" />
+    <!--  END CUSTOM STYLE FILE  -->
 
 </head>
 <body>
