@@ -1,3 +1,16 @@
+  <?php
+
+    $cat_id=0;
+    $med_id=0;
+    $tipoitemid=0;
+    $estilo ='';
+    if (isset($producto)) {
+      $cat_id = $producto->prod_categoria_id;
+      $med_id = $producto->prod_medida_id;
+      $estilo ='readonly';
+    } 
+   ?>
+
   <!--  BEGIN CONTENT AREA  -->
         <div id="content" class="main-content">
             <div class="layout-px-spacing">                
@@ -25,16 +38,18 @@
                                                                 <div class="row">
                                                                     <div class="col-sm-6">
                                                                         <div class="form-group">
-                                                                            <label for="fullName">Nombre del Producto</label>
-                                                                            <input type="text" class="form-control mb-4" id="fullName" placeholder="Full Name" value="Nombre del Producto">
+                                                                            <label for="prod_nombre">Nombre del Producto</label>
+                                                                            <input type="text" class="form-control mb-4" id="prod_nombre" placeholder="Full Name" value="">
                                                                         </div>
                                                                     </div>
                   
                                                                     <div class="form-group col-md-3">
                                                                                 <label for="inputState">Categoria</label>
-                                                                                <select id="inputState" class="form-control">
+                                                                                <select id="prod_categoria" name="prod_categoria" class="form-control">
                                                                                     <option selected>Choose...</option>
-                                                                                    <option>...</option>
+                                                                                    <?php foreach ($categoria as $value): ?>
+                  <option value="<?php echo $value->ccat_id;?>" <?php if($value->ccat_id == $producto->prod_categoria_id):?> selected <?php endif?> > <?php echo $value->cat_nombre;?></option>  
+                <?php endforeach ?> 
                                                                                 </select>
                                                                    </div>
 

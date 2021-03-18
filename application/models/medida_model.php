@@ -10,8 +10,16 @@ class Medida_model extends CI_Model {
 	public function select(){
 		$medida = $this->db->from('medida')
 							->get()
-							->row();
+							->result();
 		return $medida; 
+	}
+
+	public function guardar(){
+
+	}
+
+	public function eliminar(){
+		
 	}
 
 }
