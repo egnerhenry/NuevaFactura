@@ -29,20 +29,53 @@
                                                                             <input type="text" class="form-control mb-4" id="fullName" placeholder="Full Name" value="Nombre del Producto">
                                                                         </div>
                                                                     </div>
-                                                                    <div class="col-sm-4">
-                                                                        <label class="dob-input">U Medida</label>
-                                                                        <div class="d-sm-flex d-block">
-                                                                            <div class="form-group mr-1">
-                                                                                <select class="form-control" id="exampleFormControlSelect1">
-                                                                                  <option>kg</option>
-                                                                                  <option selected>kg</option>
-                                                                                  <option>kg</option>
+                  
+                                                                    <div class="form-group col-md-3">
+                                                                                <label for="inputState">Categoria</label>
+                                                                                <select id="inputState" class="form-control">
+                                                                                    <option selected>Choose...</option>
+                                                                                    <option>...</option>
                                                                                 </select>
-                                                                            </div>
-                                                                           
-                                                                        </div>
-                                                                    </div>
-                                                                </div>
+                                                                   </div>
+
+                                                                    <div class="form-group col-md-3">
+                                                                                <label for="inputState">Medida</label>
+                                                                                <select id="inputState" class="form-control">
+                                                                                    <option selected>Choose...</option>
+                                                                                    <option>...</option>
+                                                                                </select>
+                                                                   </div>
+                                                           </div>
+
+                                                      <div class="row">
+                                                            <div class="col-sm-3">
+                                                               <div class="form-group">
+                                                                <label for="fullName">Precio de Conpra</label>
+                                                                <input type="text" class="form-control mb-3" id="fullName" placeholder="Full Name" value="1.00">
+                                                               </div>
+                                                            </div> 
+                                                            <div class="col-sm-3">
+                                                               <div class="form-group">
+                                                                <label for="fullName">Precio de Venta</label>
+                                                                <input type="text" class="form-control mb-3" id="fullName" placeholder="Full Name" value="1.00">
+                                                               </div>
+                                                            </div> 
+                                                            <div class="col-sm-3">
+                                                               <div class="form-group">
+                                                                <label for="fullName">Codigo</label>
+                                                                <input type="text" class="form-control mb-3" id="fullName" placeholder="Full Name" value="#412587">
+                                                               </div>
+                                                            </div> 
+                                                            <div class="col-sm-3">
+                                                               <div class="form-group">
+                                                                <label for="fullName">Codigo de Barra</label>
+                                                                <input type="text" class="form-control mb-3" id="fullName" placeholder="Full Name" value="#124578">
+                                                               </div>
+                                                            </div> 
+                                                      </div>
+
+
+
                                                                 <div class="form-group">
                                                                     <label for="profession">Profession</label>
                                                                     <input type="text" class="form-control mb-4" id="profession" placeholder="Designer" value="Web Developer">
