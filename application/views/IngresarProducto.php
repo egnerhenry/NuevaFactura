@@ -26,7 +26,7 @@
                                                                     <div class="col-sm-6">
                                                                         <div class="form-group">
                                                                             <label for="fullName">Nombre del Producto</label>
-                                                                            <input type="text" class="form-control mb-4" id="fullName" placeholder="Full Name" value="Nombre del Producto">
+                                                                            <input type="text" class="form-control mb-4" id="fullName" placeholder="Full Name">
                                                                         </div>
                                                                     </div>
                   
@@ -51,35 +51,43 @@
                                                             <div class="col-sm-3">
                                                                <div class="form-group">
                                                                 <label for="fullName">Precio de Conpra</label>
-                                                                <input type="text" class="form-control mb-3" id="fullName" placeholder="Full Name" value="1.00">
+                                                                <input type="text" class="form-control mb-3" id="fullName" placeholder="Full Name" >
                                                                </div>
                                                             </div> 
                                                             <div class="col-sm-3">
                                                                <div class="form-group">
                                                                 <label for="fullName">Precio de Venta</label>
-                                                                <input type="text" class="form-control mb-3" id="fullName" placeholder="Full Name" value="1.00">
+                                                                <input type="text" class="form-control mb-3" id="fullName" placeholder="Full Name" >
                                                                </div>
                                                             </div> 
                                                             <div class="col-sm-3">
                                                                <div class="form-group">
                                                                 <label for="fullName">Codigo</label>
-                                                                <input type="text" class="form-control mb-3" id="fullName" placeholder="Full Name" value="#412587">
+                                                                <input type="text" class="form-control mb-3" id="fullName" placeholder="Full Name">
                                                                </div>
                                                             </div> 
                                                             <div class="col-sm-3">
                                                                <div class="form-group">
                                                                 <label for="fullName">Codigo de Barra</label>
-                                                                <input type="text" class="form-control mb-3" id="fullName" placeholder="Full Name" value="#124578">
+                                                                <input type="text" class="form-control mb-3" id="fullName" placeholder="Full Name">
                                                                </div>
                                                             </div> 
                                                       </div>
 
+                                                <div class="row">
+                                                    <div class="col-md-12">
+                                                       <textarea class="form-control" placeholder="Description" rows="10"></textarea>
+                                                    </div>
+                                                </div>
+                                                <br><br>
 
-
-                                                                <div class="form-group">
-                                                                    <label for="profession">Profession</label>
-                                                                    <input type="text" class="form-control mb-4" id="profession" placeholder="Designer" value="Web Developer">
-                                                                </div>
+                                              
+                                                <div class="row">
+                                                <div class="col-md-12 text-right mb-5">
+                                                    <button id="add-work-platforms" class="btn btn-primary">Agregar</button>
+                                                </div>
+                                                </div>
+                                                                
                                                             </div>
                                                         </div>
                                                     </div>
