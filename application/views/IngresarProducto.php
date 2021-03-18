@@ -58,9 +58,10 @@
 
                                                                     <div class="form-group col-md-3 col-sm-6">
                                                                                 <label for="inputState">Medida</label>
-                                                                                <select id="inputState" class="form-control">
-                                                                                    <option selected>Choose...</option>
-                                                                                    <option>...</option>
+                                                                                <select id="inputState" class="form-control">                                                            
+                                                                                  <?PHP foreach($medida as $value){?>
+                                                                                    <option><?= $value->medida_nombre?></option>
+                                                                                  <?PHP }?>                                                                                      
                                                                                 </select>
                                                                    </div>
                                                            </div>

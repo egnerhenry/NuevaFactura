@@ -223,6 +223,13 @@ switch (ENVIRONMENT)
  *  Now that we know the path, set the main path constants
  * -------------------------------------------------------------------
  */
+
+
+	//CONSTANTES 18-03-2021
+	define('ST_ACTIVO', 2);
+	define('ST_ELIMINADO', -1);	
+
+
 	// The name of THIS file
 	define('SELF', pathinfo(__FILE__, PATHINFO_BASENAME));
 

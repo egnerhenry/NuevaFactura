@@ -9,8 +9,8 @@ class Medida_model extends CI_Model {
 
 	public function select(){
 		$medida = $this->db->from('medida')
-							->get()
-							->result();
+						   ->get()
+						   ->result();
 		return $medida; 
 	}
 
