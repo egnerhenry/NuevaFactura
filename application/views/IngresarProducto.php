@@ -40,7 +40,7 @@
                                                                     <div class="form-group col-md-3 col-sm-6">
                                                                                 <label for="inputState">Categoria</label>
                                                                                 <select id="prod_categoria" name="prod_categoria" class="form-control">
-                                                                                    <?php foreach ($categoria as $valor){?>
+                                                                                    <?php foreach ($categoria as $valor){?>//
                                                                                      
                                                                                     
                                                                                     <option><?= $valor->cat_nombre?></option>
