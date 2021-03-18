@@ -47,9 +47,7 @@
                                                                                 <label for="inputState">Categoria</label>
                                                                                 <select id="prod_categoria" name="prod_categoria" class="form-control">
                                                                                     <option selected>Choose...</option>
-                                                                                    <?php foreach ($categoria as $value): ?>
-                  <option value="<?php echo $value->ccat_id;?>" <?php if($value->ccat_id == $producto->prod_categoria_id):?> selected <?php endif?> > <?php echo $value->cat_nombre;?></option>  
-                <?php endforeach ?> 
+                                                                                  
                                                                                 </select>
                                                                    </div>
 
