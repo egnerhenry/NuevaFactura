@@ -1,0 +1,18 @@
+
+CREATE TABLE `productos` (
+  `prod_id` int(11) NOT NULL,
+  `prod_codigo_sunat` char(50) DEFAULT NULL,
+  `prod_codigo` varchar(40) NOT NULL,
+  `prod_nombre` varchar(200) NOT NULL,
+  `prod_descripcion` varchar(500) NULL,
+  `prod_precio_venta` decimal(10,2) NOT NULL,
+  `prod_precio_compra` decimal(10,2) DEFAULT NULL,
+  `prod_imagen` varchar(200) DEFAULT NULL,
+  `prod_codigo_barra` varchar(100) DEFAULT NULL,  
+  `prod_cantidad_minima` int(11) NOT NULL,
+  `prod_estado` tinyint(4) NOT NULL,
+  `prod_categoria_id` int(11) NOT NULL,
+  `prod_medida_id` int(11) NOT NULL,
+  `prod_almacen_id` int(11) NOT NULL,
+  `prod_fecha` date DEFAULT NULL
+) ENGINE=MYISAM DEFAULT CHARSET=utf8;
