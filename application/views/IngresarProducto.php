@@ -29,78 +29,17 @@
                                                                             <input type="text" class="form-control mb-4" id="fullName" placeholder="Full Name" value="Nombre del Producto">
                                                                         </div>
                                                                     </div>
-                                                                    <div class="col-sm-6">
-                                                                        <label class="dob-input">Date of Birth</label>
+                                                                    <div class="col-sm-3">
+                                                                        <label class="dob-input">U Medida</label>
                                                                         <div class="d-sm-flex d-block">
                                                                             <div class="form-group mr-1">
                                                                                 <select class="form-control" id="exampleFormControlSelect1">
-                                                                                  <option>Day</option>
-                                                                                  <option selected>20</option>
-                                                                                  <option>21</option>
-                                                                                 
+                                                                                  <option>kg</option>
+                                                                                  <option selected>kg</option>
+                                                                                  <option>kg</option>
                                                                                 </select>
                                                                             </div>
-                                                                            <div class="form-group mr-1">
-                                                                                <select class="form-control" id="month">
-                                                                                    <option>Month</option>
-                                                                                    <option selected>Jan</option>
-                                                                                    <option>Feb</option>
-                                                                                    <option>Mar</option>
-                                                                                    <option>Apr</option>
-                                                                                    <option>May</option>
-                                                                                    <option>Jun</option>
-                                                                                    <option>Jul</option>
-                                                                                    <option>Aug</option>
-                                                                                    <option>Sep</option>
-                                                                                    <option>Oct</option>
-                                                                                    <option>Nov</option>
-                                                                                    <option>Dec</option>
-                                                                                </select>
-                                                                            </div>
-                                                                            <div class="form-group mr-1">
-                                                                                <select class="form-control" id="year">
-                                                                                  <option>Year</option>
-                                                                                  <option>2018</option>
-                                                                                  <option>2017</option>
-                                                                                  <option>2016</option>
-                                                                                  <option>2015</option>
-                                                                                  <option>2014</option>
-                                                                                  <option>2013</option>
-                                                                                  <option>2012</option>
-                                                                                  <option>2011</option>
-                                                                                  <option>2010</option>
-                                                                                  <option>2009</option>
-                                                                                  <option>2008</option>
-                                                                                  <option>2007</option>
-                                                                                  <option>2006</option>
-                                                                                  <option>2005</option>
-                                                                                  <option>2004</option>
-                                                                                  <option>2003</option>
-                                                                                  <option>2002</option>
-                                                                                  <option>2001</option>
-                                                                                  <option>2000</option>
-                                                                                  <option>1999</option>
-                                                                                  <option>1998</option>
-                                                                                  <option>1997</option>
-                                                                                  <option>1996</option>
-                                                                                  <option>1995</option>
-                                                                                  <option>1994</option>
-                                                                                  <option>1993</option>
-                                                                                  <option>1992</option>
-                                                                                  <option>1991</option>
-                                                                                  <option>1990</option>
-                                                                                  <option selected>1989</option>
-                                                                                  <option>1988</option>
-                                                                                  <option>1987</option>
-                                                                                  <option>1986</option>
-                                                                                  <option>1985</option>
-                                                                                  <option>1984</option>
-                                                                                  <option>1983</option>
-                                                                                  <option>1982</option>
-                                                                                  <option>1981</option>
-                                                                                  <option>1980</option>
-                                                                                </select>
-                                                                            </div>
+                                                                           
                                                                         </div>
                                                                     </div>
                                                                 </div>
@@ -117,4 +56,62 @@
                                     </form>
                                 </div>
 
-                                </div></div></div></div></div></div>
+
+
+
+<!--////////////////////////////////////////segunda parte//////////////////////////////////////////////-->
+
+
+                                <div class="col-xl-12 col-lg-12 col-md-12 layout-spacing">
+                                    <form id="about" class="section about">
+                                        <div class="info">
+                                            <h5 class="">Ingresar Categoria</h5>
+                                            <div class="row">
+                                                  <div class="col-sm-6">
+                                                       <div class="form-group">
+                                                         <label for="fullName">Nombre del categoria</label>
+                                                         <input type="text" class="form-control mb-4" id="fullName" placeholder="Full Name" value="Ejem.(Lacteos)">
+                                                       </div>
+                                                  </div>
+                                                 <div class="col-md-12 text-right mb-5">
+                                                    <button id="add-work-platforms" class="btn btn-primary">Agregar</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </form>
+                                </div>
+
+<!--////////////////////////////////////////Tercera parte//////////////////////////////////////////////-->
+
+   <div class="col-xl-12 col-lg-12 col-md-12 layout-spacing">
+                                    <form id="about" class="section about">
+                                        <div class="info">
+                                            <h5 class="">Ingresar Unidad de Medida</h5>
+                                            <div class="row">
+                                                  <div class="col-sm-6">
+                                                       <div class="form-group">
+                                                         <label for="fullName">Nombre Unidad Medida</label>
+                                                         <input type="text" class="form-control mb-4" id="fullName" placeholder="Full Name" value="ejem. (Metro)">
+                                                       </div>
+                                                  </div>
+                                                  <div class="col-sm-6">
+                                                       <div class="form-group">
+                                                         <label for="fullName">Prefijo Uni Medida</label>
+                                                         <input type="text" class="form-control mb-4" id="fullName" placeholder="Full Name" value="Ingresar Prefijo (mt)">
+                                                       </div>
+                                                  </div>
+                                                 <div class="col-md-12 text-right mb-5">
+                                                    <button id="add-work-platforms" class="btn btn-primary">Agergar</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </form>
+                                </div>
+
+<!--////////////////////////////////////////segunda parte//////////////////////////////////////////////-->
+
+                                
+
+
+
+                               <!-- </div></div></div></div></div></div>-->
