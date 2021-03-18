@@ -1,15 +1,4 @@
-  <?php
-
-    $cat_id=0;
-    $med_id=0;
-    $tipoitemid=0;
-    $estilo ='';
-    if (isset($producto)) {
-      $cat_id = $producto->prod_categoria_id;
-      $med_id = $producto->prod_medida_id;
-      $estilo ='readonly';
-    } 
-   ?>
+ 
 
   <!--  BEGIN CONTENT AREA  -->
         <div id="content" class="main-content">
@@ -51,8 +40,11 @@
                                                                     <div class="form-group col-md-3 col-sm-6">
                                                                                 <label for="inputState">Categoria</label>
                                                                                 <select id="prod_categoria" name="prod_categoria" class="form-control">
-                                                                                    <option selected>Choose...</option>
-                                                                                  
+                                                                                    <?php foreach ($categoria as $valor){?>
+                                                                                     
+                                                                                    
+                                                                                    <option><?= $valor->cat_nombre?></option>
+                                                                                  <?php }?>
                                                                                 </select>
                                                                    </div>
 
