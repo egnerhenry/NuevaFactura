@@ -29,7 +29,7 @@
                                                                             <input type="text" class="form-control mb-4" id="fullName" placeholder="Full Name" value="Nombre del Producto">
                                                                         </div>
                                                                     </div>
-                                                                    <div class="col-sm-3">
+                                                                    <div class="col-sm-4">
                                                                         <label class="dob-input">U Medida</label>
                                                                         <div class="d-sm-flex d-block">
                                                                             <div class="form-group mr-1">
