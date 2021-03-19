@@ -33,11 +33,11 @@
             <ul class="navbar-item theme-brand flex-row  text-center">
                 <li class="nav-item theme-logo">
                     <a href="index.html">
-                        <img src="cork/assets/img/90x90.jpg" class="navbar-logo" alt="logo">
+                        <img src="cork/assets/img/logo.jpeg" class="navbar-logo" alt="logo">
                     </a>
                 </li>
                 <li class="nav-item theme-text">
-                    <a href="index.html" class="nav-link"> CORK </a>
+                    <a href="index.html" class="nav-link"> Sistema Facturacion Pos  </a>
                 </li>
             </ul>
 
@@ -78,7 +78,7 @@
                 <li>
                     <div class="page-header">
                         <div class="page-title">
-                            <h3>Blank Page</h3>
+                            <h3>Mundo Soft Peru</h3>
                         </div>
                     </div>
                 </li>
@@ -103,8 +103,8 @@
                     <li class="menu">
                         <a href="#starter-kit" data-active="true" data-toggle="collapse" aria-expanded="true" class="dropdown-toggle">
                             <div class="">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-terminal"><polyline points="4 17 10 11 4 5"></polyline><line x1="12" y1="19" x2="20" y2="19"></line></svg>
-                                <span>Starter Kit</span>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-file-text"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path><polyline points="14 2 14 8 20 8"></polyline><line x1="16" y1="13" x2="8" y2="13"></line><line x1="16" y1="17" x2="8" y2="17"></line><polyline points="10 9 9 9 8 9"></polyline></svg>
+                                <span>COMPROBANTES</span>
                             </div>
                             <div>
                                 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-chevron-right"><polyline points="9 18 15 12 9 6"></polyline></svg>
@@ -112,34 +112,26 @@
                         </a>
                         <ul class="submenu list-unstyled collapse show" id="starter-kit" data-parent="#accordionExample" style="">
                             <li class="active">
-                                <a href="starter_kit_blank_page.html"> Blank Page </a>
+                                <a href="starter_kit_blank_page.html"> Boletas </a>
                             </li>
                             <li>
-                                <a href="starter_kit_breadcrumbs.html"> Breadcrumbs </a>
+                                <a href="starter_kit_breadcrumbs.html"> Factura </a>
                             </li>
                             <li>
-                                <a href="starter_kit_boxed.html"> Boxed </a>
+                                <a href="starter_kit_boxed.html"> Nota de Venta </a>
                             </li>
                             <li>
-                                <a href="starter_kit_alt_menu.html"> Alternate Menu </a>
+                                <a href="starter_kit_alt_menu.html"> Guia de Remision </a>
                             </li>
                         </ul>
                     </li>
 
-                    <li class="menu">
-                        <a href="javascript:void(0);" aria-expanded="false" class="dropdown-toggle">
-                            <div class="">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-home"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"></path><polyline points="9 22 9 12 15 12 15 22"></polyline></svg>
-                                <span> Menu 1</span>
-                            </div>
-                        </a>
-                    </li>
 
                     <li class="menu">
                         <a href="#submenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">
                             <div class="">
                                 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-airplay"><path d="M5 17H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2v10a2 2 0 0 1-2 2h-1"></path><polygon points="12 15 17 21 7 21 12 15"></polygon></svg>
-                                <span> Menu 2</span>
+                                <span> PRODUCTOS</span>
                             </div>
                             <div>
                                 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-chevron-right"><polyline points="9 18 15 12 9 6"></polyline></svg>
@@ -147,14 +139,37 @@
                         </a>
                         <ul class="collapse submenu list-unstyled" id="submenu" data-parent="#accordionExample">
                             <li>
-                                <a href="javascript:void(0);"> Submenu 1 </a>
+                                <a href="javascript:void(0);"> Ingreso de Productos  </a>
                             </li>
                             <li>
-                                <a href="javascript:void(0);"> Submenu 2 </a>
-                            </li>                           
+                                <a href="javascript:void(0);"> Ingreso de Categorias </a>
+                            </li>   
+                            <li>
+                                <a href="javascript:void(0);"> Ingreso de Medida </a>
+                            </li>                         
                         </ul>
+
                     </li>
 
+
+                     <li class="menu">
+                        <a href="#submenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">
+                            <div class="">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-airplay"><path d="M5 17H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2v10a2 2 0 0 1-2 2h-1"></path><polygon points="12 15 17 21 7 21 12 15"></polygon></svg>
+                                <span> CLIENTES</span>
+                            </div>
+                            <div>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-chevron-right"><polyline points="9 18 15 12 9 6"></polyline></svg>
+                            </div>
+                        </a>
+                        <ul class="collapse submenu list-unstyled" id="submenu" data-parent="#accordionExample">
+                            <li>
+                                <a href="javascript:void(0);"> Ingreso de Clientes </a>
+                            </li>                        
+                        </ul>
+
+                    </li>
+<!--//////////////////////////////////////////////////////////////////////////////////////
                     <li class="menu">
                         <a href="#submenu2" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">
                             <div class="">
@@ -184,7 +199,8 @@
                                 </ul>
                             </li>
                         </ul>
-                    </li>
+                    </li> 
+                    //////////////////////////////////////////////////////////////////////-->
                 </ul>
                 
             </nav>
