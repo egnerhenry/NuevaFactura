@@ -43,7 +43,7 @@
                                                                    </div>
                                                                    <div class="form-group col-md-3 col-sm-6">
                                                                                 <label for="inputState">Medida</label>
-                                                                                <select id="inputState" class="form-control">                                                            
+                                                                                <select id="prod_medida" name="prod_medida" class="form-control">                                                            
                                                                                   <?PHP foreach($medida as $value){?>
                                                                                     <option><?= $value->medida_nombre?></option>
                                                                                   <?PHP }?>                                                                                      
@@ -60,7 +60,7 @@
                                                             <div class="col-sm-3">
                                                                <div class="form-group">
                                                                 <label for="prod_precio_venta">Precio de Venta</label>
-                                                                <input type="text" class="form-control mb-3" id="prod_precio_venta" name="prod_precio_compra" placeholder="Precio Venta" >
+                                                                <input type="text" class="form-control mb-3" id="prod_precio_venta" name="prod_precio_venta" placeholder="Precio Venta" >
                                                                </div>
                                                             </div> 
                                                             <div class="col-sm-3">
@@ -84,7 +84,7 @@
                                                 <br><br>                                              
                                                 <div class="row">
                                                 <div class="col-md-12 text-right mb-5">
-                                                    <button id="btn_agregar_producto" class="btn btn-primary">Agregar</button>
+                                                    <button type="button" id="btn_agregar_producto" class="btn btn-primary">Agregar</button>
                                                 </div>
                                                 </div>                                                              
                                                             </div>
@@ -141,7 +141,7 @@
                                         </div>
                                     </form>
                                 </div>
-
+<script src="https://code.jquery.com/jquery-1.12.4.min.js" integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ=" crossorigin="anonymous"></script>
 <script type="text/javascript">
   $("#btn_agregar_producto").on("click",function(){
       $.ajax({
