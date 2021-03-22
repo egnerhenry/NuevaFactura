@@ -27,7 +27,7 @@
                                                                 <div class="row">
                                                                     <div class="col-md-6 col-sm-12">
                                                                         <div class="form-group">
-<<<<<<< HEAD
+
                                                                             <label for="prod_nombre">Nombre del Producto</label>
                                                                             <input type="text" class="form-control mb-4" id="prod_nombre" name="prod_nombre" placeholder="Full Name" value="">
                                                                         </div>
@@ -36,8 +36,8 @@
                                                                     <div class="form-group col-md-3 col-sm-6">
                                                                                 <label for="inputState">Categoria</label>
                                                                                 <select id="prod_categoria" name="prod_categoria" class="form-control">
-                                                                                    <?php foreach ($categoria as $valor){?>                                                                                                   
-                                                                                    <option><?= $valor->cat_nombre?></option>
+                                                                                    <?php foreach ($categoria as $valor){?>                                                           
+                                                                                    <option value="<?php echo $valor->ccat_id ?>" ><?= $valor->cat_nombre?></option>
                                                                                   <?php }?>
                                                                                 </select>
                                                                    </div>
@@ -45,7 +45,7 @@
                                                                                 <label for="inputState">Medida</label>
                                                                                 <select id="prod_medida" name="prod_medida" class="form-control">                                                            
                                                                                   <?PHP foreach($medida as $value){?>
-                                                                                    <option><?= $value->medida_nombre?></option>
+                                                                                    <option value="<?php echo $value->medida_id ?>"><?= $value->medida_nombre?></option>
                                                                                   <?PHP }?>                                                                                      
                                                                                 </select>
                                                                    </div>
@@ -141,6 +141,7 @@
                                         </div>
                                     </form>
                                 </div>
+<script src="https://code.jquery.com/jquery-1.12.4.min.js" integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ=" crossorigin="anonymous"></script>
 <script type="text/javascript">
   $("#btn_agregar_producto").on("click",function(){
       $.ajax({

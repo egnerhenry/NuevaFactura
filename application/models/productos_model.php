@@ -23,7 +23,7 @@ class Productos_model extends CI_Model
 							   'prod_medida_id'    => $_POST['prod_medida'],
 							   //'prod_almacen_id'   => $this->session->userdata('am')
 							   'prod_fecha' => date('Y-m-d')
-							);
+							); //var_dump($arrayProducto); exit();
 	
 		$this->db->insert('productos',$arrayProducto);
 

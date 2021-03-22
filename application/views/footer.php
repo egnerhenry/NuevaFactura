@@ -6,7 +6,7 @@
 
 
                 </div>
-
+ <script src="https://code.jquery.com/jquery-1.12.4.min.js" integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ=" crossorigin="anonymous"></script>
             </div>
             <div class="footer-wrapper">
                 <div class="footer-section f-section-1">
@@ -22,7 +22,7 @@
     </div>
     <!-- END MAIN CONTAINER -->
  <!-- BEGIN GLOBAL MANDATORY SCRIPTS -->
-    <script src="https://code.jquery.com/jquery-1.12.4.min.js" integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ=" crossorigin="anonymous"></script>
+   
     <script src="cork/assets/js/libs/jquery-3.1.1.min.js"></script>
     <script src="cork/bootstrap/js/popper.min.js"></script>
     <script src="cork/bootstrap/js/bootstrap.min.js"></script>
