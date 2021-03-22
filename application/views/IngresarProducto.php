@@ -143,11 +143,9 @@
                                 </div>
 
 <script type="text/javascript">
-  
-
   $("#btn_agregar_producto").on("click",function(){
       $.ajax({
-          url: '<?= baes_url();?>index.php/productos/guardar',
+          url: '<?= base_url();?>index.php/productos/guardar',
           method: 'POST',
           dataType: 'JSON',
           data: $("#formProducto").serialize(),
