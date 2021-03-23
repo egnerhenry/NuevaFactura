@@ -12,23 +12,27 @@ class Productos extends CI_Controller {
 	public function index(){		
 	
 	}
+	public function select(){
+		$data['productos']=$this->productos_model->select();
+		$this->load->view('index.php',$data);
+	}
 
 	public function guardar(){
 		$error = array();
 		if ($_POST['prod_nombre'] == '') {
 			$error['prod_nombre'] = 'falta ingresar nombre de producto';
 		}
-		if($_POST['cat_nombre'] == ''){
-			$error['cat_nombre'] = 'falta categoria';
+		if($_POST['prod_categoria'] == ''){
+			$error['prod_categoria'] = 'falta categoria';
 		}
-		if ($_POST['medida_nombre']) {
-			$error['medida_nombre'] = 'falta medida';
+		if ($_POST['prod_medida'] == '') {
+			$error['prod_medida'] = 'falta medida';
 		}
 		if ($_POST['prod_precio_compra'] == '') {
 			$error['prod_precio_compra'] = 'falta precio de compra';
 		}
 		if ($_POST['prod_precio_venta'] == '') {
-			$error['prod_precio_venta']´= "falta precio de venta";
+			$error['prod_precio_venta']= "falta precio de venta";
 		}
 		if ($_POST['prod_codigo'] == '') {
 			$error['prod_codigo'] = "falta codigo";
@@ -41,7 +45,7 @@ class Productos extends CI_Controller {
 		}
 		if (count($error) > 0) {
 			$data = ['status'=>STATUS_FAIL,'tipo'=>1, 'errores'=>$error];
-    		sendJsonData($data);
+    		echo json_encode($data);
     		exit();
 		}
 		$this->productos_model->guardar();

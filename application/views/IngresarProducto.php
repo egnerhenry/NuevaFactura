@@ -79,7 +79,7 @@
                                                             <div class="col-sm-3">
                                                                <div class="form-group">
                                                                 <label for="prod_codigo_barra">Stock</label>
-                                                                <input type="text" class="form-control mb-3" id="prod_codigo_barra" name="prod_codigo_barra" placeholder="Stock">
+                                                                <input type="text" class="form-control mb-3" id="prod_stock" name="prod_stock" placeholder="Stock">
                                                                </div>
                                                             </div>  
                                                       </div>
@@ -378,6 +378,11 @@
                                             <th class="no-content"></th>
                                             <th class="no-content"></th>
                                         </tr>
+                                        <!--<?php foreach ($productos as $value) {?>
+                                            <td><?php echo $value->id?></td>
+                                            <td><?php echo $value->nombre?></td>
+                                            <td><?php echo $value->apellidos?></td>
+                                      <?php  } ?>-->
                                     </tfoot>
                                 </table>
                             </div>
@@ -469,7 +474,7 @@
 
               
               //var time = parseInt($("#stock_inicial").val())*30;
-              toast('success',time , 'Espere mientras se guarda el producto ... ');
+             // toast('success',time , 'Espere mientras se guarda el producto ... ');
         $.ajax({
           url:'<?php echo base_url()?>index.php/productos/guardar',
           dataType:'json',                    
@@ -479,26 +484,24 @@
           processData:false,          
           success:function(response){
 
-            if(response.status == STATUS_FAIL)
+            if(response.status == 1)
             {
               if(response.tipo == '1')
               {
                 var errores = response.errores;
-                toast('error', 1500, 'Faltan ingresar datos.');
+                //toast('error', 1500, 'Faltan ingresar datos.');                
                 $.each(errores, function(index, value){
                   $("#"+index).parent().addClass('has-error has-feedback');
                 });
-              }
-              if(response.tipo == '2')
-              {                
-                toast('error', 1500, 'El còdigo ya està en uso');
-              }
+              }              
             }
-            if(response.status == STATUS_OK)
-            {              
-              toast('success', 1500, 'Producto ingresado');
-              dataSource.read();
-              $("#myModal").modal('hide');
+            if(response.status == 2)
+            {   
+
+                alert('DATOS INGRESADOS CORRECTAMENTE');
+              //toast('success', 1500, 'Producto ingresado');
+              //dataSource.read();
+              //$("#myModal").modal('hide');
             }
           }
         });

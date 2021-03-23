@@ -3,7 +3,10 @@
 class Productos_model extends CI_Model
 {
 	public function select(){
-
+				$resultado = $this->db->from('productos')
+				->get()
+				->result();
+			return $resultado;
 	}
 
 	public function guardar(){
