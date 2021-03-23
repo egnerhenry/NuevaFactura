@@ -9,6 +9,7 @@ class Welcome extends CI_Controller {
 
         $this->load->model("medida_model");
         $this->load->model("categoria_model");
+        $this->load->model("productos_model");
     }
 	
 	public function index()
@@ -17,9 +18,11 @@ class Welcome extends CI_Controller {
 
 		$data['medida'] = $this->medida_model->select();
 		$data['categoria'] = $this->categoria_model->select();
+		$data['productos'] = $this->productos_model->select();
 		$this->load->view('header');
 		$this->load->view('ingresarproducto',$data);
 		$this->load->view('footer');
+		
 
 	}
 }

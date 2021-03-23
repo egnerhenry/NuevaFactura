@@ -378,10 +378,11 @@
                                             <th class="no-content"></th>
                                             <th class="no-content"></th>
                                         </tr>
-                                        <?php foreach ($producto as $value) {?>
-                                            <td><?php echo $value['prod_cod']?></td>
-                                            <td><?php echo $value->nombre?></td>
-                                            <td><?php echo $value->apellidos?></td>
+                                        <?php foreach ($productos as $value) {?>
+                                            <td><?php echo $value->prod_codigo ?></td>
+                                            <td><?php echo $value->prod_nombre?></td>
+                                            <td><?php echo $value->prod_medida_id?></td>
+                                            <td><?php echo $value->prod_precio_venta?></td>
                                       <?php  } ?>
                                     </tfoot>
                                 </table>
