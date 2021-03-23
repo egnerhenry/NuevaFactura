@@ -123,7 +123,7 @@
                                             <th class="no-content"></th>
                                         </tr>
                                     </thead>
-                                    <tbody>
+                                    <!--<tbody>
                                         <tr>
                                             <td>Tiger Nixon</td>
                                             <td>System Architect</td>
@@ -367,7 +367,7 @@
                                             <td>$357,650</td>
                                             <td><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-x-circle table-cancel"><circle cx="12" cy="12" r="10"></circle><line x1="15" y1="9" x2="9" y2="15"></line><line x1="9" y1="9" x2="15" y2="15"></line></svg></td>
                                         </tr>
-                                    </tbody>
+                                    </tbody>-->
                                     <tfoot>
                                         <tr>
                                             <th>Codigo</th>
@@ -378,11 +378,11 @@
                                             <th class="no-content"></th>
                                             <th class="no-content"></th>
                                         </tr>
-                                        <!--<?php foreach ($productos as $value) {?>
-                                            <td><?php echo $value->id?></td>
+                                        <?php foreach ($producto as $value) {?>
+                                            <td><?php echo $value['prod_cod']?></td>
                                             <td><?php echo $value->nombre?></td>
                                             <td><?php echo $value->apellidos?></td>
-                                      <?php  } ?>-->
+                                      <?php  } ?>
                                     </tfoot>
                                 </table>
                             </div>

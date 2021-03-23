@@ -37,7 +37,7 @@
                     </a>
                 </li>
                 <li class="nav-item theme-text">
-                    <a href="index.html" class="nav-link"> Sistema Facturacion Pos  </a>
+                    <a href="index.php" class="nav-link"> Sistema Facturacion Pos  </a>
                 </li>
             </ul>
 
