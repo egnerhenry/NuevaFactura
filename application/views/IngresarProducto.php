@@ -18,8 +18,9 @@
                                                     <div class="row">
                                                         <div class="col-xl-2 col-lg-12 col-md-4">
                                                             <div class="upload mt-4 pr-md-4">
-                                                                <input type="file" id="input-file-max-fs" class="dropify" data-default-file="cork/assets/img/200x200.jpg" data-max-file-size="2M" />
+                                                                <input type="file" id="input-file-max-fs" class="dropify" data-default-file="cork/assets/img/200x200.jpg" data-max-file-size="2M" id="prod_imagen" name="prod_imagen" />
                                                                 <p class="mt-2"><i class="flaticon-cloud-upload mr-1"></i> <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-download"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path><polyline points="7 10 12 15 17 10"></polyline><line x1="12" y1="15" x2="12" y2="3"></line></svg>&nbsp Subir Imagen</p>
+
                                                             </div>
                                                         </div>
                                                         <div class="col-xl-10 col-lg-12 col-md-8 mt-md-0 mt-4">
@@ -107,7 +108,7 @@
                                 <table id="zero-config" class="table table-hover" style="width:100%">
                                     <thead>
                                         <tr>
-                                            <th>Name</th>
+                                            <th>NOMBRE DE PRODUCTOS</th>
                                             <th>Position</th>
                                             <th>Office</th>
                                             <th>Age</th>
@@ -438,21 +439,66 @@
 
  ////////////////////////////////////////////////////////////////////////////////////-->
 
-
+<!--PASAR DATOS -->>
 
 <script src="https://code.jquery.com/jquery-1.12.4.min.js" integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ=" crossorigin="anonymous"></script>
-<script type="text/javascript">
-  $("#btn_agregar_producto").on("click",function(){
-      $.ajax({
-          url: '<?= base_url();?>index.php/productos/guardar',
-          method: 'POST',
-          dataType: 'JSON',
-          data: $("#formProducto").serialize(),
-          success : function(){
+<script src="<?PHP echo base_url();?>assets/bootstrap/js/bootstrap.min.js"></script>
+<script src="<?PHP echo base_url(); ?>assets/js/jquery-ui-1.11.0.js"></script>
+<link rel="stylesheet" href="<?PHP echo base_url();?>assets/bootstrap/css/bootstrap.min.css">
 
+<script type="text/javascript">
+
+  $(document).ready(function(e){
+  //alert("prueba"); 
+   
+
+  $("#btn_agregar_producto").on('click',function(){
+        //alert("hjkhk");
+        $("#formProducto").submit();
+      });
+
+      $("#formProducto").on('submit',function(e){        
+        e.preventDefault();
+        $(".has-error.has-feedback").removeClass('has-error has-feedback');
+
+              
+              //var time = parseInt($("#stock_inicial").val())*30;
+              toast('success',time , 'Espere mientras se guarda el producto ... ');
+        $.ajax({
+          url:'<?php echo base_url()?>index.php/productos/guardar',
+          dataType:'json',                    
+          method : "POST",
+          data:new FormData(this),
+          contentType:false,
+          processData:false,          
+          success:function(response){
+
+            if(response.status == STATUS_FAIL)
+            {
+              if(response.tipo == '1')
+              {
+                var errores = response.errores;
+                toast('error', 1500, 'Faltan ingresar datos.');
+                $.each(errores, function(index, value){
+                  $("#"+index).parent().addClass('has-error has-feedback');
+                });
+              }
+              if(response.tipo == '2')
+              {                
+                toast('error', 1500, 'El còdigo ya està en uso');
+              }
+            }
+            if(response.status == STATUS_OK)
+            {              
+              toast('success', 1500, 'Producto ingresado');
+              dataSource.read();
+              $("#myModal").modal('hide');
+            }
           }
-      })
-  });
+        });
+             });
+      });
+      
 </script>       
 
 
@@ -466,7 +512,7 @@
                 "sInfo": "Showing page _PAGE_ of _PAGES_",
                 "sSearch": '<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-search"><circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line></svg>',
                 "sSearchPlaceholder": "Search...",
-               "sLengthMenu": "Results :  _MENU_",
+               "sLengthMenu": "Productos Ingresados :  _MENU_",
             },
             "stripeClasses": [],
             "lengthMenu": [7, 10, 20, 50],

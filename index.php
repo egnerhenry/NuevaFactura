@@ -229,6 +229,9 @@ switch (ENVIRONMENT)
 	define('ST_ACTIVO', 2);
 	define('ST_ELIMINADO', -1);	
 
+	define('STATUS_OK', 2);
+	define('STATUS_FAIL',1);
+
 
 	// The name of THIS file
 	define('SELF', pathinfo(__FILE__, PATHINFO_BASENAME));
