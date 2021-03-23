@@ -20,7 +20,7 @@ class Productos_model extends CI_Model
 							   'prod_precio_venta' => $_POST['prod_precio_venta'],
 							   'prod_precio_compra'=> $_POST['prod_precio_compra'],
 							   'prod_codigo_barra' => $_POST['prod_codigo_barra'],
-							   //'prod_cantidad_minima' => $_POST[''],
+							   'prod_stock' => $_POST['prod_stock'],
 							   'prod_estado' => ST_ACTIVO,
 							   'prod_categoria_id' => $_POST['prod_categoria'],
 							   'prod_medida_id'    => $_POST['prod_medida'],
