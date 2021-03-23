@@ -75,7 +75,13 @@
                                                                 <label for="prod_codigo_barra">Codigo de Barra</label>
                                                                 <input type="text" class="form-control mb-3" id="prod_codigo_barra" name="prod_codigo_barra" placeholder="Codigo Barra">
                                                                </div>
-                                                            </div> 
+                                                            </div>
+                                                            <div class="col-sm-3">
+                                                               <div class="form-group">
+                                                                <label for="prod_codigo_barra">Stock</label>
+                                                                <input type="text" class="form-control mb-3" id="prod_codigo_barra" name="prod_codigo_barra" placeholder="Stock">
+                                                               </div>
+                                                            </div>  
                                                       </div>
                                                 <div class="row">
                                                     <div class="col-md-12">
@@ -108,12 +114,12 @@
                                 <table id="zero-config" class="table table-hover" style="width:100%">
                                     <thead>
                                         <tr>
-                                            <th>NOMBRE DE PRODUCTOS</th>
-                                            <th>Position</th>
-                                            <th>Office</th>
-                                            <th>Age</th>
-                                            <th>Start date</th>
-                                            <th>Salary</th>
+                                            <th>Codigo</th>
+                                            <th>Nombre de Producto </th>
+                                            <th>Medida</th>
+                                            <th>P.Venta</th>
+                                            <th>Stock</th>
+                                            <th class="no-content"></th>
                                             <th class="no-content"></th>
                                         </tr>
                                     </thead>
@@ -124,7 +130,7 @@
                                             <td>Edinburgh</td>
                                             <td>61</td>
                                             <td>2011/04/25</td>
-                                            <td>$320,800</td>
+                                            <td><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-x-circle table-cancel"><circle cx="12" cy="12" r="10"></circle><line x1="15" y1="9" x2="9" y2="15"></line><line x1="9" y1="9" x2="15" y2="15"></line></svg></td>
                                             <td><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-x-circle table-cancel"><circle cx="12" cy="12" r="10"></circle><line x1="15" y1="9" x2="9" y2="15"></line><line x1="9" y1="9" x2="15" y2="15"></line></svg></td>
                                         </tr>
                                         <tr>
@@ -133,7 +139,7 @@
                                             <td>Tokyo</td>
                                             <td>63</td>
                                             <td>2011/07/25</td>
-                                            <td>$170,750</td>
+                                            <<td><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-x-circle table-cancel"><circle cx="12" cy="12" r="10"></circle><line x1="15" y1="9" x2="9" y2="15"></line><line x1="9" y1="9" x2="15" y2="15"></line></svg></td>
                                             <td><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-x-circle table-cancel"><circle cx="12" cy="12" r="10"></circle><line x1="15" y1="9" x2="9" y2="15"></line><line x1="9" y1="9" x2="15" y2="15"></line></svg></td>
                                         </tr>
                                         <tr>
@@ -364,13 +370,13 @@
                                     </tbody>
                                     <tfoot>
                                         <tr>
-                                            <th>Name</th>
-                                            <th>Position</th>
-                                            <th>Office</th>
-                                            <th>Age</th>
-                                            <th>Start date</th>
-                                            <th>Salary</th>
-                                            <th></th>
+                                            <th>Codigo</th>
+                                            <th>Nombre de Producto </th>
+                                            <th>Medida</th>
+                                            <th>P.Venta</th>
+                                            <th>Stock</th>
+                                            <th class="no-content"></th>
+                                            <th class="no-content"></th>
                                         </tr>
                                     </tfoot>
                                 </table>
