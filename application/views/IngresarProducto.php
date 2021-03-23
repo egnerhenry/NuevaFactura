@@ -122,6 +122,15 @@
                                             <th class="no-content"></th>
                                             <th class="no-content"></th>
                                         </tr>
+                                        <?php foreach ($productos as $value) {?>
+                                            <tr>
+                                            <td><?php echo $value->prod_codigo ?></td>
+                                            <td><?php echo $value->prod_nombre?></td>
+                                            <td><?php echo $value->prod_medida_id?></td>
+                                            <td><?php echo $value->prod_precio_venta?></td>
+                                            <td><?php echo $value->prod_stock?></td>
+                                            </tr>
+                                      <?php  } ?>
                                     </thead>
                                     <!--<tbody>
                                         <tr>
@@ -378,12 +387,7 @@
                                             <th class="no-content"></th>
                                             <th class="no-content"></th>
                                         </tr>
-                                        <?php foreach ($productos as $value) {?>
-                                            <td><?php echo $value->prod_codigo ?></td>
-                                            <td><?php echo $value->prod_nombre?></td>
-                                            <td><?php echo $value->prod_medida_id?></td>
-                                            <td><?php echo $value->prod_precio_venta?></td>
-                                      <?php  } ?>
+
                                     </tfoot>
                                 </table>
                             </div>
