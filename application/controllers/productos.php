@@ -14,7 +14,7 @@ class Productos extends CI_Controller {
 	}
 	public function select(){
 		$data['productos']=$this->productos_model->select();
-		$this->load->view('IngresarProducto',$data);
+		$this->load->view('IngresarProductos',$data);
 	}
 
 	public function guardar(){
@@ -44,7 +44,7 @@ class Productos extends CI_Controller {
 			$error['prod_descripcion'] = "falta descripcion";
 		}
 		if ($_POST['prod_stock'] == '') {
-			$error['prod_stock'] = "falta stock";
+			$error['prod_sto'] = "falta descripcion";
 		}
 		if (count($error) > 0) {
 			$data = ['status'=>STATUS_FAIL,'tipo'=>1, 'errores'=>$error];

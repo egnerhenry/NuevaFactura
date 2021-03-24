@@ -32,7 +32,7 @@
 
             <ul class="navbar-item theme-brand flex-row  text-center">
                 <li class="nav-item theme-logo">
-                    <a href="index.html">
+                    <a href="index.php">
                         <img src="cork/assets/img/logo.jpeg" class="navbar-logo" alt="logo">
                     </a>
                 </li>

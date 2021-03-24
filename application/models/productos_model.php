@@ -11,6 +11,18 @@ class Productos_model extends CI_Model
 
 	public function guardar(){
 
+		if ($_POST['prod_codigo'] != '') {
+			$carpeta = 'images/productos/';
+       opendir($carpeta);
+       $destino = $carpeta.$_FILES['prod_imagen']['name'];
+       
+       copy($_FILES['prod_imagen']['tmp_name'], $destino);       
+
+       $data = array(
+                        'prod_id' => $_POST['prod_id'],
+                        'prod_imagen' => $_FILES['prod_imagen']['name']
+                    ); 
+		}
 
 
 		$arrayProducto = array(//'prod_codigo_sunat' => $_POST[''],
@@ -24,13 +36,14 @@ class Productos_model extends CI_Model
 							   'prod_estado' => ST_ACTIVO,
 							   'prod_categoria_id' => $_POST['prod_categoria'],
 							   'prod_medida_id'    => $_POST['prod_medida'],
-							   //'prod_almacen_id'   => $this->session->userdata('am')
+							   'prod_imagen'   => $_FILES['prod_imagen']['name'],
 							   'prod_fecha' => date('Y-m-d')
 							); //var_dump($arrayProducto); exit();
 	
 		$this->db->insert('productos',$arrayProducto);
 
 	}
+
 		
 	public function eliminar(){
 

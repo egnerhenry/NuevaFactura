@@ -18,7 +18,7 @@
                                                     <div class="row">
                                                         <div class="col-xl-2 col-lg-12 col-md-4">
                                                             <div class="upload mt-4 pr-md-4">
-                                                                <input type="file" id="input-file-max-fs" class="dropify" data-default-file="cork/assets/img/200x200.jpg" data-max-file-size="2M" id="prod_imagen" name="prod_imagen" />
+                                                                <input type="file" id="prod_imagen" class="dropify" data-default-file="cork/assets/img/200x200.jpg" data-max-file-size="2M" name="prod_imagen" value="" />
                                                                 <p class="mt-2"><i class="flaticon-cloud-upload mr-1"></i> <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-download"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path><polyline points="7 10 12 15 17 10"></polyline><line x1="12" y1="15" x2="12" y2="3"></line></svg>&nbsp Subir Imagen</p>
 
                                                             </div>
