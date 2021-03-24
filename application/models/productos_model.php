@@ -45,7 +45,9 @@ class Productos_model extends CI_Model
 	}
 
 		
-	public function eliminar(){
+	public function eliminar($id){
+			$this->db->where('prod_id', $id);
+			$this->db->delete('productos');
 
 	}
 }

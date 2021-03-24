@@ -6,16 +6,16 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, shrink-to-fit=no">
     <title>Account Settings | CORK - Multipurpose Bootstrap Dashboard Template </title>
-    <link rel="icon" type="image/x-icon" href="cork/assets/img/favicon.ico"/>
+    <link rel="icon" type="image/x-icon" href="<?= base_url()?>cork/assets/img/favicon.ico"/>
     <!-- BEGIN GLOBAL MANDATORY STYLES -->
-    <link href="https://fonts.googleapis.com/css?family=Nunito:400,600,700" rel="stylesheet">
-    <link href="cork/bootstrap/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
-    <link href="cork/assets/css/plugins.css" rel="stylesheet" type="text/css" />
+    <link href="<?= base_url()?>https://fonts.googleapis.com/css?family=Nunito:400,600,700" rel="stylesheet">
+    <link href="<?= base_url()?>cork/bootstrap/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+    <link href="<?= base_url()?>cork/assets/css/plugins.css" rel="stylesheet" type="text/css" />
     <!-- END GLOBAL MANDATORY STYLES -->
 
     <!--  BEGIN CUSTOM STYLE FILE  -->
-    <link rel="stylesheet" type="text/css" href="cork/plugins/dropify/dropify.min.css">
-    <link href="cork/assets/css/users/account-setting.css" rel="stylesheet" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="<?= base_url()?>cork/plugins/dropify/dropify.min.css">
+    <link href="<?= base_url()?>cork/assets/css/users/account-setting.css" rel="stylesheet" type="text/css" />
     <!--  END CUSTOM STYLE FILE  -->
 
 </head>
@@ -33,7 +33,7 @@
             <ul class="navbar-item theme-brand flex-row  text-center">
                 <li class="nav-item theme-logo">
                     <a href="index.php">
-                        <img src="cork/assets/img/logo.jpeg" class="navbar-logo" alt="logo">
+                        <img src="<?= base_url()?>cork/assets/img/logo.jpeg"  class="navbar-logo" alt="logo">
                     </a>
                 </li>
                 <li class="nav-item theme-text">
@@ -45,7 +45,7 @@
 
                 <li class="nav-item dropdown user-profile-dropdown">
                     <a href="javascript:void(0);" class="nav-link dropdown-toggle user" id="userProfileDropdown" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
-                        <img src="cork/assets/img/90x90.jpg" alt="avatar">
+                        <img src="<?= base_url()?>cork/assets/img/90x90.jpg" alt="avatar">
                     </a>
                     <div class="dropdown-menu position-absolute" aria-labelledby="userProfileDropdown">
                         <div class="">
@@ -142,7 +142,7 @@
                                 <a href="javascript:void(0);"> Ingreso de Productos  </a>
                             </li>
                             <li>
-                                <a href="javascript:void(0);"> Ingreso de Categorias </a>
+                                <a href="index.php/productos/crear"> Ingreso de Categorias </a>
                             </li>   
                             <li>
                                 <a href="javascript:void(0);"> Ingreso de Medida </a>

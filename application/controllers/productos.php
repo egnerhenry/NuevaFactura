@@ -7,9 +7,13 @@ class Productos extends CI_Controller {
 
 		parent::__construct();
 		$this->load->model('productos_model');
+
 	}
 
-	public function index(){		
+	public function crear(){
+		$this->load->view('header');
+		$this->load->view('categoria_modal');
+		$this->load->view('footer');		
 	
 	}
 	public function select(){
@@ -53,6 +57,10 @@ class Productos extends CI_Controller {
 		}
 		$this->productos_model->guardar();
 
+	}
+	public function eliminar($id){
+		$this->productos_model->eliminar($id);
+		redirect(base_url(). "index.php");
 	}
 }
 
