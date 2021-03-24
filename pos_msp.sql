@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Servidor: 127.0.0.1
--- Tiempo de generación: 18-03-2021 a las 17:22:10
+-- Tiempo de generación: 25-03-2021 a las 00:04:10
 -- Versión del servidor: 10.1.37-MariaDB
 -- Versión de PHP: 7.2.12
 
@@ -33,6 +33,14 @@ CREATE TABLE `categoria` (
   `cat_nombre` varchar(100) CHARACTER SET utf8 COLLATE utf8_unicode_ci NOT NULL,
   `cat_estado` int(11) NOT NULL
 ) ENGINE=MyISAM DEFAULT CHARSET=utf8;
+
+--
+-- Volcado de datos para la tabla `categoria`
+--
+
+INSERT INTO `categoria` (`cat_id`, `cat_nombre`, `cat_estado`) VALUES
+(1, 'VARIOS', 2),
+(408, 'BLAUZEN', 2);
 
 -- --------------------------------------------------------
 
@@ -175,8 +183,17 @@ CREATE TABLE `productos` (
   `prod_categoria_id` int(11) NOT NULL,
   `prod_medida_id` int(11) NOT NULL,
   `prod_almacen_id` int(11) NOT NULL,
-  `prod_fecha` date DEFAULT NULL
+  `prod_fecha` date DEFAULT NULL,
+  `prod_stock` int(11) NOT NULL
 ) ENGINE=MyISAM DEFAULT CHARSET=utf8;
+
+--
+-- Volcado de datos para la tabla `productos`
+--
+
+INSERT INTO `productos` (`prod_id`, `prod_codigo_sunat`, `prod_codigo`, `prod_nombre`, `prod_descripcion`, `prod_precio_venta`, `prod_precio_compra`, `prod_imagen`, `prod_codigo_barra`, `prod_cantidad_minima`, `prod_estado`, `prod_categoria_id`, `prod_medida_id`, `prod_almacen_id`, `prod_fecha`, `prod_stock`) VALUES
+(18, NULL, '666655555', 'auto blanco', 'auto', '4800.00', '2400.00', '10-toyota-corolla.jpg', '00004', 0, 2, 408, 15, 0, '2021-03-25', 8),
+(16, NULL, '6699', 'JOSE', 'NUEVO', '3.20', '2.30', 'jose.jpg', '000444', 0, 2, 1, 3, 0, '2021-03-24', 8);
 
 --
 -- Índices para tablas volcadas
@@ -220,7 +237,7 @@ ALTER TABLE `productos`
 -- AUTO_INCREMENT de la tabla `categoria`
 --
 ALTER TABLE `categoria`
-  MODIFY `cat_id` int(11) NOT NULL AUTO_INCREMENT;
+  MODIFY `cat_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=409;
 
 --
 -- AUTO_INCREMENT de la tabla `comprobantes`
@@ -244,7 +261,7 @@ ALTER TABLE `medida`
 -- AUTO_INCREMENT de la tabla `productos`
 --
 ALTER TABLE `productos`
-  MODIFY `prod_id` int(11) NOT NULL AUTO_INCREMENT;
+  MODIFY `prod_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=19;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
