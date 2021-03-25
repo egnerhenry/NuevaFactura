@@ -58,6 +58,12 @@ class Productos extends CI_Controller {
 		$this->productos_model->guardar();
 
 	}
+	public function editar($Idproducto){
+		$data['productos'] = $this->productos_model->select($Idproducto);
+		$this->load->view('header');
+		$this->load->view('modal_editar', $data);
+		$this->load->view('footer');
+	}
 	public function eliminar($id){
 		$this->productos_model->eliminar($id);
 		redirect(base_url(). "index.php");
